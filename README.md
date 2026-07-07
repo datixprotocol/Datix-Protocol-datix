@@ -115,7 +115,7 @@ datix complete-unstake --keypair agent-wallet.json
 datix emergency-unstake --keypair agent-wallet.json
 ```
 
-Or use the web interface: [datixprotocol.com/create-agent](https://datixprotocol.xyz/create-agent)
+Or use the web interface: [datixprotocol.xyz/create-agent](https://datixprotocol.xyz/create-agent)
 
 ## Instructions
 
@@ -217,8 +217,8 @@ All staking/slashing features tested: register, verify, stake, add_stake, slash 
 
 ## Links
 
-- **Website:** [datixprotocol.com](https://datixprotocol.xyz)
-- **Agents Directory:** [datixprotocol.com/agents](https://datixprotocol.xyz/agents.html)
+- **Website:** [datixprotocol.xyz](https://datixprotocol.xyz)
+- **Agents Directory:** [datixprotocol.xyz/agents](https://datixprotocol.xyz/agents.html)
 - **Twitter:** [@datixinfra](https://twitter.com/datixinfra)
 - **SDK:** [npmjs.com/package/datix-sdk](https://www.npmjs.com/package/datix-sdk)
 
