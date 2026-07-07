@@ -1,4 +1,4 @@
-# datix Protocol
+# Datix Protocol
 
 **Solana Agent Identity** — On-chain identity, staking, and trust infrastructure for AI agents.
 
