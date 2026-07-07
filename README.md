@@ -1,4 +1,4 @@
-# SAID Protocol
+# DATIX Protocol
 
 **Solana Agent Identity** — On-chain identity, staking, and trust infrastructure for AI agents.
 
@@ -6,11 +6,11 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Agents](https://img.shields.io/badge/agents-3%2C000%2B-blue)
 
-**Live:** [www.saidprotocol.com](https://www.saidprotocol.com) | **Quick Start:** `npx said-sdk register`
+**Live:** [https://datixprotocol.xyz](https://datixprotocol.xyz) | **Quick Start:** `npx datix-sdk register`
 
-## What is SAID?
+## What is DATIX?
 
-SAID provides verifiable, on-chain identity for autonomous AI agents — with real economic security through staking and slashing.
+DATIX provides verifiable, on-chain identity for autonomous AI agents — with real economic security through staking and slashing.
 
 Any agent can register for free. Verified agents stake SOL as collateral. Bad actors get slashed. Reputation is anchored on-chain with Merkle proofs.
 
@@ -20,7 +20,7 @@ Any agent can register for free. Verified agents stake SOL as collateral. Bad ac
 
 The agent economy has a trust problem. Anyone can spin up an AI agent, but there's no way to know:
 
-- **Who owns this agent?** → SAID identity + wallet linkage
+- **Who owns this agent?** → DATIX identity + wallet linkage
 - **Can I trust it?** → Stake = skin in the game
 - **What has it done?** → Receipt chain + Merkle-anchored history
 - **What happens if it scams?** → Slashing burns the stake
@@ -64,23 +64,23 @@ Existing agents stay at their tier — staking is opt-in.
 - **Verifiable proofs** — Anyone can verify receipt inclusion against a root
 
 ### Cross-Registry Compatibility
-SAID is designed as a **universal trust layer** — any agent registry or platform can query SAID trust scores:
+DATIX is designed as a **universal trust layer** — any agent registry or platform can query DATIX trust scores:
 
 ```
 GET /api/trust/:agentOwner
 → { verification: 25, stake: 25, reputation: 50, total: 100 }
 ```
 
-Other registries don't need to build their own staking/slashing — they use SAID.
+Other registries don't need to build their own staking/slashing — they use DATIX.
 
 ## Ecosystem
 
 | Repository | Description |
 |------------|-------------|
-| **[said](https://github.com/kaiclawd/said)** | Core Solana program (Rust/Anchor) — this repo |
-| **[said-sdk](https://github.com/kaiclawd/said-sdk)** | TypeScript SDK + CLI (v0.3.0 — staking support) |
-| **[said-api](https://github.com/kaiclawd/said-api)** | REST API + database layer |
-| **[said-website](https://github.com/kaiclawd/said-website)** | Next.js website + docs |
+| **[DATIX](https://github.com/datixprotocol/Datix-Protocol-datix)** | Core Solana program (Rust/Anchor) — this repo |
+| **[DATIX-sdk](https://github.com/datixprotocol/Datix-Protocol-datix-sdk)** | TypeScript SDK + CLI (v0.3.0 — staking support) |
+| **[DATIX-api](https://github.com/datixprotocol/Datix-Protocol-datix-api)** | REST API + database layer |
+| **[DATIX-website](https://github.com/datixprotocol/Datix-Protocol-datix-website)** | Next.js website + docs |
 
 ## Program
 
@@ -93,29 +93,29 @@ Other registries don't need to build their own staking/slashing — they use SAI
 
 ```bash
 # Install the CLI
-npm install -g said-sdk
+npm install -g DATIX-sdk
 
 # Register your agent (free)
-said register --keypair agent-wallet.json --name "MyAgent" --description "AI agent on Solana"
+DATIX register --keypair agent-wallet.json --name "MyAgent" --description "AI agent on Solana"
 
 # Get verified (0.01 SOL)
-said verify --keypair agent-wallet.json
+DATIX verify --keypair agent-wallet.json
 
 # Stake SOL as collateral (min 0.1 SOL)
-said stake --keypair agent-wallet.json --amount 0.1
+DATIX stake --keypair agent-wallet.json --amount 0.1
 
 # Add more stake anytime
-said add-stake --keypair agent-wallet.json --amount 0.5
+DATIX add-stake --keypair agent-wallet.json --amount 0.5
 
 # Unstake: request → wait 7 days → withdraw
-said request-unstake --keypair agent-wallet.json
-said complete-unstake --keypair agent-wallet.json
+DATIX request-unstake --keypair agent-wallet.json
+DATIX complete-unstake --keypair agent-wallet.json
 
 # Emergency exit (immediate, 10% penalty)
-said emergency-unstake --keypair agent-wallet.json
+DATIX emergency-unstake --keypair agent-wallet.json
 ```
 
-Or use the web interface: [saidprotocol.com/create-agent](https://www.saidprotocol.com/create-agent)
+Or use the web interface: [datixprotocol.xyz/create-agent](https://datixprotocol.xyz/create-agent)
 
 ## Instructions
 
@@ -194,8 +194,8 @@ pub struct ReceiptAnchor {
 ### Build from Source
 
 ```bash
-git clone https://github.com/kaiclawd/said.git
-cd said
+git clone https://github.com/datixprotocol/Datix-Protocol-datix
+cd DATIX
 anchor build
 ```
 
@@ -218,10 +218,10 @@ All staking/slashing features tested: register, verify, stake, add_stake, slash 
 
 ## Links
 
-- **Website:** [saidprotocol.com](https://www.saidprotocol.com)
-- **Agents Directory:** [saidprotocol.com/agents](https://www.saidprotocol.com/agents.html)
-- **Twitter:** [@saidinfra](https://twitter.com/saidinfra)
-- **SDK:** [npmjs.com/package/said-sdk](https://www.npmjs.com/package/said-sdk)
+- **Website:** [DATIXprotocol.com](https://datixprotocol.xyz)
+- **Agents Directory:** [DATIXprotocol.com/agents](https://datixprotocol.xyz/agents.html)
+- **Twitter:** [@DATIXinfra](https://twitter.com/datixinfra)
+- **SDK:** [npmjs.com/package/DATIX-sdk](https://www.npmjs.com/package/DATIX-sdk)
 
 ## License
 
