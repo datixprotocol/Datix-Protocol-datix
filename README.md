@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Agents](https://img.shields.io/badge/agents-3%2C000%2B-blue)
 
-**Live:** [www.datixprotocol.com](https://datixprotocol.xyz) | **Quick Start:** `npx datix-sdk register`
+**Live:** [https://.datixprotocol.xyz](https://datixprotocol.xyz) | **Quick Start:** `npx datix-sdk register`
 
 ## What is datix?
 
